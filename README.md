@@ -1,34 +1,202 @@
-# CPyProjectTemplate
-Put a description for your project here!
-This repo is a template VS code project for CircuitPython projects that automatically uploads your code to the board when you press F5. Requires F5Anything extension.
-## What does this do?
-This makes it easirt to develop for boards like 
-## Use
-### Every new project:
-1. Make a GitHub account if you don't have one with your normal school credentials and sign into it.
-2. Click the big green Use This Template button at the top of this page.
-3. Name the new repository something appropriate to the purpose of your project (Your first one should probably be named `Engr3`).
-4. Hit "Create repository from template." (The default settings should be fine.)
-5. Open VS Code on your machine. Click Clone Repository. If it doesn't show up, hit Ctrl+Shift+P and then type Clone, then hit Enter.
-6. Paste in the link to the new repository you've just created from the template and hit enter.
-7. For the location, Documents folder.
-8. Hit "Open Cloned Directory" in the bottom-left corner.
-9. Install the reccomended extensions when you get that popup in the lower right corner. IF the pop-up dissapears before you can click it, hit the tiny bell icon in the lower left corner to bring it back.
-### To commit from VS Code:
-1. Go to the little branch icon in the left bar of VS Code.
-2. Click the + icon next to the files you want to commit.
-3. Write a message that descibes your changes in the "Message" box and hit commit.
-4. If you get an error about user.name and user.email, see the next section.
-5. Click the "Sync changes" button.
-### If you get an error about user.name and user.email
-1. In VS Code, hit `` Ctrl+Shift+` ``
-2. Filling in your actual information, run the following commands one line at a time. The paste shortcut is `Ctrl+V` or you can right click then hit paste. Spelling must match exactly:
+# Engineering3 
+# CircuitPython
+This repository will actually serve as an aid to help you get started with your own template.  You should copy the raw form of this readme into your own, and use this template to write your own.  If you want to draw inspiration from other classmates, feel free to check [this directory of all students!](https://github.com/chssigma/Class_Accounts).
+## Table of Contents
+* [Table of Contents](#TableOfContents)
+* [Hello_CircuitPython](#Hello_CircuitPython)
+* [CircuitPython_Servo](#CircuitPython_Servo)
+* [CircuitPython_LCD](#CircuitPython_LCD)
+* [NextAssignmentGoesHere](#NextAssignment)
+---
+
+
+##  Hello_CircuitPython
+
+### Description & Code
+This asignment was to make a led flash a rainbow. i did this by wiring the led to the arduino then did the code. I-+ lost my code, but this is similar to it. 
+```C
+void setup()  { 
+ 
+} 
+ 
+void loop()  {
+ 
+ 
+  for(int b = 0 ; b <= 255; b=b+5) 
+  { 
+      for(int g = 0 ; g <= 255; g=g+5) 
+    { 
+      for(int r= 0 ; r <= 255; r=r+5) 
+       { 
+        analogWrite(9, b);         
+        analogWrite(10, g);         
+        analogWrite(11, r);    
+        delay(10);
+ 
+      } 
+    }
+  }
+ 
+}
 ```
-git config --global user.name YOURGITHUBUSERNAME
-git config --global user.email YOURSCHOOLEMAIL
+credit goes to [seeeddoc.github.io](https://seeeddoc.github.io/Arduino_Sidekick_Basic_Kit/)
+
+### Evidence
+
+### Wiring
+
+
+<img src="https://seeeddoc.github.io/Arduino_Sidekick_Basic_Kit/img/Arduino_Sidekick_RGB_LED_Display.jpg"  style="width:500px;">
+
+
+image credit goes to [https://seeeddoc.github.io(/Arduino_Sidekick_Basic_Kit/)
+### Reflection
+This asignment wasn't even hard i just had to look up how to wire a led. Cause i always wire first then do my code. 
+
+
+
+
+
+
+## CircuitPython_LCD
+
+### Description & Code
+
+```python
+Code goes here
+import board
+import time
+import digitalio
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+
+# turn on lcd power switch pin
+lcdPower = digitalio.DigitalInOut(board.D8)
+lcdPower.direction = digitalio.Direction.INPUT
+lcdPower.pull = digitalio.Pull.DOWN
+
+# Keep the I2C protocol from running until the LCD has been turned on
+# You need to flip the switch on the breadboard to do this.
+while lcdPower.value is False:
+    print("still sleeping")
+    time.sleep(0.1)
+
+# Time to start up the LCD!
+time.sleep(1)
+print(lcdPower.value)
+print("running")
+
+i2c = board.I2C()
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)
+
+
+# Loop forever.
+while True:
 ```
-3. Return to the previous section.
-### To install a library:
-1. Get the library files from the Adafruit bundle (probably a .mpy file or a folder.)
-2. Copy them to the lib folder *in your project's folder, usually in Documents.* **Don't copy to the lib folder on the board! It will not work!**
-3. Hit F5 and the library will be uplaoded to the board.
+
+### Evidence
+
+Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+
+### Wiring
+
+
+### Reflection
+
+
+## circuitphython_servo
+
+### Description & Code
+This asignment was to get 2 buttons and when u press one button it goes to 180 and when u press the other one it goes to 0.
+I got this working by getting the buttons working then add the code. 
+
+
+```python
+Code goes here
+ Create a PWMOut object on Pin A2.
+pwm = pwmio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
+# Create a servo object, my_servo.
+my_servo = servo.Servo(pwm)
+
+#button 1 turns to 180
+btn = DigitalInOut(board.D11)
+btn.direction = Direction.INPUT
+btn.pull = Pull.DOWN
+
+#button 2 turns to 0
+btn2 = DigitalInOut(board.D6)
+btn2.direction = Direction.INPUT
+btn2.pull = Pull.DOWN
+
+while True:
+    # if button 1 is pressed then it will turn to 180
+    if btn.value:
+        my_servo.angle = 180
+        time.sleep(0.02 )
+        print("BTN1 is pressed") 
+        # if button 2 is pressed it will turn to 0
+    if btn2.value:
+        my_servo.angle = 0
+        time.sleep(0.05)
+        print("BTN2 is pressed")
+
+
+```
+
+### Evidence
+
+### Wiring
+![buttonServoWiring](https://github.com/Mgray881/ENG3/assets/143528424/6c9d90a5-d094-45cc-bd45-f1122d33e2f1)
+
+
+
+### Reflection
+This asignment was hard but once i asked my classmate she told me what to do and it got easier. i used goggle to look up "how to wire a button." and i used adafruit to get the code.
+
+
+## Circuirphtthon Distance Sensor
+
+### Description & Code
+This asignment was to measure the distance to an object using HC-SR04.
+```python
+Code goes here
+
+```
+
+### Evidence
+
+### Wiring
+![ultrasonic-sensor-hc-sr04/](https://howtomechatronics.com/wp-content/uploads/2022/02/HC-SR04-Ultrasonic-Sensor-Arduino-Connection-Wiring-1024x580.png?ezimgfmt=ng:webp/ngcb2)
+
+image credit goes to [howtomechatronics.com](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
+
+
+### Reflection
+
+
+
+## NextAssignment
+
+### Description & Code Snippets
+Write a couple sentences here, describing this assignment, and make sure that you hit these two points:
+* What was the goal of the assignment?
+* How did you accomplish that goal?
+  How you accomplished the goal is NOT a reflection, it is you telling the reader how to do this assignment, in broad strokes.
+
+  Your description is the right place to draw the reader's attention to any important chunks of code. Here's how you make code look like code:
+
+```python
+Code goes here
+
+```
+
+**Lastly, please end this section with a link to your code or file.**  
+
+### Evidence
+
+### Wiring
+[tinkercad.com](https://www.tinkercad.com/learn/circuits).  If you can't find the particular part you need, get creative, and just drop a note into the circuit diagram, explaining.
+For example, I use an Arduino Uno to represent my Circuitpython device but write a note saying which board I'm actually using.
+Then post an image here.   [Here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+### Reflection
+Don't just tell the reader what went wrong or was challenging!  Describe how you figured it out, share the things that helped you succeed (tutorials, other people's repos, etc.), and then share what you learned from that experience.  **Your underlying goal for the reflection, is to concisely pass on the RIGHT knowledge that will help the reader recreate this assignment better or more easily.  Pass on your wisdom!**
