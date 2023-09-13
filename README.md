@@ -154,14 +154,28 @@ while True:
 This asignment was hard but once i asked my classmate she told me what to do and it got easier. i used goggle to look up "how to wire a button." and i used adafruit to get the code.
 
 
-## Circuirphtthon Distance Sensor
+## Circuirtphython Distance Sensor
 
 ### Description & Code
 This asignment was to measure the distance to an object using HC-SR04.
 ```python
 Code goes here
 
-```
+```import time
+import board
+
+import adafruit_hcsr04
+
+sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D13, echo_pin=board.D12)
+
+
+while True:
+    try:
+        print((sonar.distance,))
+    except RuntimeError:
+        print("Retrying!")
+        pass
+    time.sleep(0.1)
 
 ### Evidence
 
@@ -172,7 +186,7 @@ image credit goes to [howtomechatronics.com](https://howtomechatronics.com/tutor
 
 
 ### Reflection
-
+this assigment was easy i just loooked up how to wire a hc-sr04 circuit phython and it showed me how to wire it and gave me a code. 
 
 
 ## NextAssignment
