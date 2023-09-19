@@ -210,6 +210,28 @@ image credit goes to [howtomechatronics.com](https://howtomechatronics.com/tutor
 this assigment was easy i just loooked up how to wire a hc-sr04 circuit phython and it showed me how to wire it and gave me a code. And my friend Alexis helpled me get the code for the neopxel and she helped me make sure everything was good.
 
 
+## Motor control
+
+### Description & Code Snippets
+this asignment was to wire up a 6v battery pack to the metro with a motor, we also had to write a phython code to make the motor speed up and slow down. 
+  
+
+```python
+Code goes here
+
+```
+
+**Lastly, please end this section with a link to your code or file.**  
+
+### Evidence
+
+### Wiring
+
+### Reflection
+
+
+
+
 ## NextAssignment
 
 ### Description & Code Snippets
