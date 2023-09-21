@@ -218,8 +218,19 @@ this asignment was to wire up a 6v battery pack to the metro with a motor, we al
 
 ```python
 Code goes here
+import time
+import board
+from analogio import AnalogIn
+import pwmio
+pin = AnalogIn(board.A1)
+motor = pwmio.PWMOut(board.D5)
+while True: 
 
-```
+    print(pin.value)
+    time.sleep(0.1)
+    motor.duty_cycle = pin.value
+
+
 
 **Lastly, please end this section with a link to your code or file.**  
 
@@ -228,7 +239,7 @@ Code goes here
 ### Wiring
 
 ### Reflection
-
+this assignment was easy, thw wiring was kinda hard because it was alot to wire. but the code was easy i thought it was gonna havr to be long beeing that we used a lot of matrials such as batterty pack, the motor, the Potentiometer and the transistor.
 
 
 
