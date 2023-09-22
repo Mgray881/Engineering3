@@ -9,6 +9,9 @@ This repository will actually serve as an aid to help you get started with your 
 * [NextAssignmentGoesHere](#NextAssignment)
 ---
 
+<img src = "images/motorcontrol.jpg" width="200" >
+
+![motor control](https://github.com/Mgray881/Engineering3/blob/main/images/motorcontrol.jpg)
 
 ##  Hello_CircuitPython
 
