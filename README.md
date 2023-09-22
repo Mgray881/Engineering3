@@ -241,6 +241,8 @@ while True:
 
 <img src = "images/motorcontrol.jpg" width="200" >
 
+![motor control](https://github.com/Mgray881/Engineering3/blob/main/images/motorcontrol.jpg)
+
 ### Reflection
 this assignment was easy, the wiring was kinda hard because it was alot to wire. but the code was easy i thought it was gonna havr to be long beeing that we used a lot of matrials such as batterty pack, the motor, the Potentiometer and the transistor.
 
