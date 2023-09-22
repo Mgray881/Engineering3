@@ -239,7 +239,7 @@ while True:
 
 ### Wiring
 
-<img src="images\motorcontrol.jpg" >
+<img src=".\images\motorcontrol.jpg" >
 
 ### Reflection
 this assignment was easy, the wiring was kinda hard because it was alot to wire. but the code was easy i thought it was gonna havr to be long beeing that we used a lot of matrials such as batterty pack, the motor, the Potentiometer and the transistor.
