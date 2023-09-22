@@ -198,6 +198,8 @@ while True:
     time.sleep(0.1)
 
 ```
+code helped from alexis and adafruit website
+
 ### Evidence
 
 ### Wiring
