@@ -287,6 +287,60 @@ Code goes here
 ### Wiring
 [tinkercad.com](https://www.tinkercad.com/learn/circuits).  If you can't find the particular part you need, get creative, and just drop a note into the circuit diagram, explaining.
 For example, I use an Arduino Uno to represent my Circuitpython device but write a note saying which board I'm actually using.
-Then post an image here.   [Here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+Then post an image here.   [Here's a quick tutorial for all markdown code, like making links](:http//guides.github.com/features/mastering-markdown/)
 ### Reflection
 Don't just tell the reader what went wrong or was challenging!  Describe how you figured it out, share the things that helped you succeed (tutorials, other people's repos, etc.), and then share what you learned from that experience.  **Your underlying goal for the reflection, is to concisely pass on the RIGHT knowledge that will help the reader recreate this assignment better or more easily.  Pass on your wisdom!**
+
+
+## the hanger
+
+### Assignment Description
+we had to create a hanger on onshape. 
+### Evidence
+
+
+### Part Link 
+
+https://cvilleschools.onshape.com/documents/2e8dfbcded09e66a270bbb18/w/b9bc7ad52ff04cab243d2807/e/5ca39b632d2663b1e46d01f0
+
+### Reflection
+this assignment was easy all i had to was look at the picture. I did get stuck doing some of the dimentions but alexis and mr. dierof helpled me. once i made one side of the hanger the other side was easy cause all i had to do was use the mirror tool.
+
+
+## the swing arm
+
+### Assignment Description
+
+
+### Evidence
+
+
+### Part Link 
+
+
+### Reflection
+
+
+
+
+## Onshape_Assignment_Template
+
+### Assignment Description
+
+Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+
+### Evidence
+
+Take several cropped screenshots of your Onshape document from different angles. Try to capture all important aspects of the design. Turn off overlays that obscure the parts, such as planes or mate connectors. Your images should have captions, so the reader knows what they are looking at!  
+
+### Part Link 
+
+[Create a link to your Onshape document](https://cvilleschools.onshape.com/documents/003e413cee57f7ccccaa15c2/w/ea71050bb283bf3bf088c96c/e/c85ae532263d3b551e1795d0?renderMode=0&uiState=62d9b9d7883c4f335ec42021). Don't forget to turn on link sharing in your Onshape document so that others can see it. 
+
+### Reflection
+
+What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
+
+
+
+
