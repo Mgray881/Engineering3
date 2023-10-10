@@ -310,16 +310,16 @@ this assignment was easy all i had to was look at the picture. I did get stuck d
 ## the swing arm
 
 ### Assignment Description
-
+for this asignment we had to look at different pictures of the swing arm and make it.
 
 ### Evidence
 
 
 ### Part Link 
-
+https://cvilleschools.onshape.com/documents/c9d45026a84cfd0c3c2bb8d7/w/be2364a1204e00b5b7cff7b4/e/716cf72a171e4ce0c0e34ed9
 
 ### Reflection
-
+this asignment was hard. gudrun helped me do everything she showed me how to make the different parts, but of course i knew how to extrude and use the tools.
 
 
 
