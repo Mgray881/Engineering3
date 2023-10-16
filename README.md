@@ -281,6 +281,7 @@ Don't just tell the reader what went wrong or was challenging!  Describe how you
 ### Assignment Description
 we had to create a hanger on onshape. 
 ### Evidence
+![hanger 2](https://github.com/Mgray881/Engineering3/assets/143528424/6494a224-61bc-47fa-bb69-42edd7563fba)
 
 
 ### Part Link 
@@ -292,10 +293,10 @@ this assignment was easy all i had to was look at the picture. I did get stuck d
 
 
 ## the swing arm
-![hanger 2](https://github.com/Mgray881/Engineering3/assets/143528424/c92ab804-71f0-41f6-b7d5-18ffb13d5683)
+
 
 ### Assignment 
-Description
+
 for this asignment we had to look at different pictures of the swing arm and make it.
 
 ### Evidence
